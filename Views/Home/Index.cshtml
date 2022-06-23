@@ -1,0 +1,116 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <section id="welcome_to_bizLand">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div class="welcome_text">
+                        <h1>Welcome to <span>BizLand</span></h1>
+                        <p>
+                            We are team of talented designers making websites with Bootstrap
+                        </p>
+                        <div class="welcome_to_bizland_items">
+                            <button type="button" class="btn btn-primary">
+                                GET STARTED
+                            </button>
+                            <div class="watch_video">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <p>Watch Video</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="about_us_text">
+                <span>ABOUT</span>
+                <h3>Find Out More <b>About Us</b></h3>
+                <p>
+                    Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-sm-12">
+                    <img src="https://bootstrapmade.com/demo/templates/BizLand/assets/img/about.jpg" alt="about_us_image" />
+                </div>
+                <div class="col-xl-6 col-lg-6 col-sm-12">
+                    <div class="about_us_summary">
+                        <h5>
+                            Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
+                        </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-store"></i>
+                                <div class="about_us_summary_text">
+                                    <h6>Ullamco laboris nisi ut aliquip consequat</h6>
+                                    <p>
+                                        Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-photo-film"></i>
+                                <div class="about_us_summary_text">
+                                    <h6>Magnam soluta odio exercitationem reprehenderi</h6>
+                                    <p>
+                                        Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                            id est laborum
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <div class="team_text">
+                <span>TEAM</span>
+                <h3>Our Hardworking <b>Team</b></h3>
+                <p>
+                    Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+                </p>
+            </div>
+            <div class="row">
+                @foreach (var worker in Model.Workers)
+                {
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="worker">
+                            <img src="@worker.Image" alt="worker" />
+                            <div class="worker-information">
+                                <h5>@worker.Fullname</h5>
+                                <p>@worker.Position</p>
+                            </div>
+                            <div class="social_medias">
+                                <ul>
+                                    <li><i class="fa-brands fa-twitter"></i></li>
+                                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                                    <li><i class="fa-brands fa-instagram"></i></li>
+                                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </section>
+</main>
+

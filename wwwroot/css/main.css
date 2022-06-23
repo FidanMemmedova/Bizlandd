@@ -1,0 +1,583 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#contact {
+  background-color: #106eea;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  padding: 8px;
+}
+
+#contact .contact_summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .contact_item a {
+  padding: 0px 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#contact .contact_item a:hover {
+  text-decoration: underline;
+}
+
+#contact .contact_social_medias {
+  height: auto;
+}
+
+#contact .contact_social_medias ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 140px;
+  margin: 0;
+}
+
+#contact .contact_social_medias ul li {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#contact .contact_social_medias ul li:hover {
+  opacity: 1;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+nav .navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+nav .navbar-brand span {
+  color: #106eea;
+}
+
+nav .navbar-nav {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+nav .navbar-nav li a {
+  color: black;
+}
+
+nav .navbar-nav li a:hover {
+  color: #106eea !important;
+  text-decoration: underline;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-underline-offset: 5px;
+}
+
+nav .dropdown-menu {
+  border-radius: 0;
+  border: 0px;
+}
+
+nav .dropdown-menu li a:hover {
+  text-decoration: none;
+  color: #106eea !important;
+}
+
+nav .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+#welcome_to_bizLand {
+  background-image: url("https://bootstrapmade.com/demo/templates/BizLand/assets/img/hero-bg.jpg");
+  max-width: 100%;
+  height: 70vh;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#welcome_to_bizLand h1 {
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#welcome_to_bizLand h1 span {
+  color: #106eea;
+}
+
+#welcome_to_bizLand p {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  max-width: 100%;
+}
+
+#welcome_to_bizLand .welcome_to_bizland_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#welcome_to_bizLand .welcome_to_bizland_items button {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 28px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+#welcome_to_bizLand .watch_video {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+}
+
+#welcome_to_bizLand .watch_video i {
+  color: #106eea;
+  font-size: 32px;
+}
+
+#welcome_to_bizLand .watch_video P {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#welcome_to_bizLand .watch_video P:hover {
+  color: #106eea;
+}
+
+#about {
+  background-color: #f6f9fe;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#about .about_us_text {
+  padding-top: 50px;
+}
+
+#about span {
+  background-color: #e7f1fd;
+  color: #0e62d0;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+#about h3 {
+  padding-top: 20px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#about h3 b {
+  font-weight: 600;
+  color: #0e62d0;
+}
+
+#about p {
+  margin: auto;
+  width: 655px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+}
+
+#about .about_us_summary {
+  text-align: start;
+  padding-top: 100px;
+}
+
+#about .about_us_summary h5 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#about .about_us_summary p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#about .about_us_summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about .about_us_summary ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#about .about_us_summary ul li i {
+  color: #0e62d0;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 19px -8px #0e62d0;
+          box-shadow: 0px 0px 19px -8px #0e62d0;
+}
+
+#about .about_us_summary ul li .about_us_summary_text {
+  padding-left: 30px;
+}
+
+#about .about_us_summary ul li .about_us_summary_text h6 {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+#about .about_us_summary ul li .about_us_summary_text p {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  width: 550px;
+}
+
+#about .about_us_summary p {
+  font-style: normal;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #about #about .about_us_text p {
+    width: 100%;
+  }
+  #about #about .about_us_summary {
+    margin: 0;
+    padding: 0;
+  }
+  #about #about .about_us_summary p {
+    width: 400px;
+  }
+  #about #about .about_us_summary_text p {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) and (min-width: 768px) and (max-width: 992px) {
+  #about #about .about_us_text p {
+    width: 400px;
+  }
+  #about #about .about_us_summary {
+    margin: 0;
+    padding: 0;
+  }
+  #about #about .about_us_summary p {
+    width: 300px;
+  }
+  #about #about .about_us_summary_text p {
+    width: 350px;
+  }
+}
+
+#team {
+  background-color: #f6f9fe;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#team .team_text {
+  padding-top: 50px;
+}
+
+#team span {
+  background-color: #e7f1fd;
+  color: #0e62d0;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+#team h3 {
+  padding-top: 20px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#team h3 b {
+  font-weight: 600;
+  color: #0e62d0;
+}
+
+#team p {
+  margin: auto;
+  width: 655px;
+  max-width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#team img {
+  width: 306px;
+  max-width: 100%;
+  height: 306px;
+}
+
+#team .worker-information {
+  padding-top: 20px;
+  text-align: start;
+  background-color: #ffffff;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+#team .worker-information h5 {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
+#team .worker-information p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: #aaa;
+  font-weight: 300;
+  width: 150px;
+  margin: 0;
+}
+
+#team .worker:hover .social_medias {
+  display: block;
+}
+
+#team .social_medias {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -150px;
+  display: none;
+}
+
+#team .social_medias ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0;
+  margin: auto;
+}
+
+#team .social_medias ul li i {
+  padding: 5px;
+  font-size: 20px;
+  background-color: #0e62d0;
+  color: #ffffff;
+  border-radius: 5px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#team .social_medias ul li i:hover {
+  opacity: 1;
+}
+
+#join_our_newsletter {
+  background-color: #f1f6fe;
+  text-align: center;
+}
+
+#join_our_newsletter h3 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+#join_our_newsletter .input-group {
+  padding: 20px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#join_our_newsletter input {
+  border-radius: 5px 0px 0px 5px;
+  border: 0;
+  width: 500px;
+}
+
+#join_our_newsletter button {
+  height: 36px;
+}
+
+#bizland_information {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#bizland_information .bizland {
+  font-family: "Roboto", sans-serif;
+}
+
+#bizland_information .bizland h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#bizland_information .bizland h4 span {
+  color: #106eea;
+}
+
+#bizland_information .bizland p {
+  font-size: 14px;
+  width: 140px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+#bizland_information .bizland p:nth-child(3), #bizland_information .bizland p:nth-child(4) {
+  width: 200px;
+  padding-bottom: 5px;
+}
+
+#bizland_information h5 {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+#bizland_information .useful_links,
+#bizland_information .our_services {
+  list-style: none;
+  padding: 0;
+}
+
+#bizland_information .useful_links li,
+#bizland_information .our_services li {
+  padding-bottom: 10px;
+}
+
+#bizland_information .useful_links span,
+#bizland_information .our_services span {
+  color: #106eea;
+}
+
+#bizland_information .useful_links a,
+#bizland_information .our_services a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#bizland_information .useful_links a:hover,
+#bizland_information .our_services a:hover {
+  color: #106eea;
+}
+
+#bizland_information .social_medias {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#bizland_information .social_medias ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 220px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+#bizland_information .social_medias ul li i {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #0e62d0;
+  color: #ffffff;
+  border-radius: 5px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#bizland_information .social_medias ul li i:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */
